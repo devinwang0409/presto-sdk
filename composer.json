@@ -1,0 +1,27 @@
+{
+  "name": "123u/presto-sdk",
+  "type": "library",
+  "description": "Provides the ability to query data in php",
+  "keywords": [
+    "dbquery",
+    "123u",
+    "sdk"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/devinwang0409/presto-sdk",
+  "support": {
+    "email": "support@123u.com"
+  },
+  "require": {
+    "php": ">=7.0.10",
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "HuanLe\\DBQueryV2\\": "src/"
+    }
+  }
+}
