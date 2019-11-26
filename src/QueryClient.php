@@ -168,6 +168,7 @@ class QueryClient
      */
     public function setSql($sql)
     {
+		$sql = trim(str_replace(PHP_EOL, ' ', $sql));
         $this->param['sql'] = $sql;
         $this->sql          = $sql;
     }
