@@ -31,7 +31,7 @@ class QueryClient
     const DB_QUERY_HOST = 'https://digger.123u.com:8443/v2/dbquery';
     const DB_QUERY_TIMEOUT = 60;
     const DB_QUERY_PARAM_ISLIMIT = true;
-    const DB_QUERY_PARAM_CACHE = true;
+    const DB_QUERY_PARAM_CACHE = false;
     const DB_QUERY_PARAM_CACHE_TIMEOUT = 86400;
     const DB_QUERY_PARAM_ASYNC = false;
     const DB_QUERY_PARAM_TIMEOUT = 360;
