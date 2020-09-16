@@ -22,7 +22,8 @@ class Parameters
             'PageSize'      => false,
             'CurrentPage'   => false,
             'cache'         => false,
-            'operator'      => false
+            'operator'      => false,
+            'payload'       => false,
         ];
         $download = [
             'async_request_id'  => true,
@@ -30,8 +31,8 @@ class Parameters
         ];
 
         return array(
-            'base' => $baseParam,
-            'download' => $download,
+            'base'      => $baseParam,
+            'download'  => $download,
         );
 
 //        return $baseParam;

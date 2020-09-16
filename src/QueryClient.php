@@ -28,7 +28,7 @@ class QueryClient
 
 
     //default
-    const DB_QUERY_HOST = 'https://digger.123u.com:8443/v2/dbquery';
+    // const DB_QUERY_HOST = 'https://digger.123u.com:8443/v2/dbquery';
     const DB_QUERY_TIMEOUT = 60;
     const DB_QUERY_PARAM_ISLIMIT = true;
     const DB_QUERY_PARAM_CACHE = false;
@@ -54,6 +54,7 @@ class QueryClient
     private $operator;
     private $isDataFormat;
     private $asyncRequestId;
+    private $payload;
 
 
     /**
@@ -290,6 +291,25 @@ class QueryClient
         $this->param['operator'] = $operator;
         $this->operator          = $operator;
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getPayload()
+    {
+        return $this->payload;
+    }
+
+    /**
+     * @param mixed $payload
+     */
+    public function setPayload($payload)
+    {
+        $this->payload = $payload;
+        $this->param['payload'] = $payload;
+    }
+
 
     /**
      * QueryClient constructor.
